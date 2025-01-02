@@ -18,7 +18,7 @@ const fs = require('fs')
 
 
 app.use(cors({
-    origin: 'https://urban-nest-ruby.vercel.app',
+    origin: ['https://urban-nest-ruby.vercel.app','http://urban-nest-ruby.vercel.app'],
     credentials: true,
 }));
 app.options('*', cors());
