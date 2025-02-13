@@ -73,7 +73,7 @@ function HomePage() {
                         className="relative rounded-lg overflow-hidden shadow-md cursor-pointer hover:shadow-lg "
                     >
                         <img
-                            src={city.image}
+                            src={require('./images/'+city.city.toLowerCase() +'.jpeg')}
                             alt={city.city}
                             className="w-full h-40 object-cover"
                         />
