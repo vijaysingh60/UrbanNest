@@ -8,11 +8,10 @@ const HomeFooter = () => {
             <div className="max-w-6xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                 <div>
                     <ul>
-                        <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Press</a></li>
                         <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Mailbox</a></li>
                         <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Contact Us</a></li>
                         <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Sitemap</a></li>
-                        <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Roomster Reviews</a></li>
+                        <li className="mb-5"><a href="#" className="hover:underline text-gray-300">UrbanNest Reviews</a></li>
                         <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Blog</a></li>
                     </ul>
                 </div>
@@ -21,7 +20,6 @@ const HomeFooter = () => {
                         <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Download App</a></li>
                         <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Finding a Room</a></li>
                         <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Renting out a Room</a></li>
-                        <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Megaphone</a></li>
                         <li className="mb-5"><a href="#" className="hover:underline text-gray-300">Bookmarks</a></li>
                     </ul>
                 </div>
