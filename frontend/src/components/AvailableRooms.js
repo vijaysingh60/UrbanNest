@@ -91,9 +91,9 @@ const AvailableRooms = () => {
     
 
     return (
-        <div className="flex  pt-20 pl-2">
+        <div className="sm:flex  pt-20 pl-2">
             {/* Left Side - Content */}
-            <div className="w-1/2 p-5 space-y-4">
+            <div className="sm:w-1/2 w-full p-5 space-y-4">
                 {/* Breadcrumb */}
                 <div className="text-gray-500 text-lg font-semibold flex items-center">
                     <span className='mx-1'><AiOutlineHome /> </span>
@@ -110,7 +110,7 @@ const AvailableRooms = () => {
                 {/* Filters */}
                 <div className="flex space-x-2 ">
                     
-                    <button className="px-4 py-2 m-5   rounded-lg hover:border-gray-800  border border-gray-400 " onClick={()=>setBgClick(true)}
+                    <button className="px-4 py-2 sm:m-5 mt-5 mx-1   rounded-lg hover:border-gray-800  border border-gray-400 " onClick={()=>setBgClick(true)}
                     >Budget</button>
                     {/**Bight slider */}
                     <div style={{display:bgClick?"block":"none"}} className="p-4 bg-white shadow-lg rounded-lg w-80 absolute z-20 mt-20 border border-gray-900">
@@ -182,7 +182,7 @@ const AvailableRooms = () => {
             </div>
 
             {/* Right Side - Map */}
-            <div className="w-1/2  ">
+            <div className="sm:w-1/2  ">
                 <div className="h-[550px] sticky top-24 shadow-xl overflow-hidden z-0">
                 <MapContainer
                 center={roomArr[0]?roomArr[0].address.coordinates:[21.0000, 78.0000]}
