@@ -176,7 +176,7 @@ const AvailableRooms = () => {
                 {/* Placeholder Image */}
                 <div className="mt-4 full  min-h-96 flex flex-wrap ">
                     {roomArr.map((value,index)=>(
-                        <div key={index} className='w-1/2 p-2'><Room props={value}  /></div>
+                        <div key={index} className='sm:w-1/2 p-2'><Room props={value}  /></div>
                     ))}
                 </div>
             </div>
