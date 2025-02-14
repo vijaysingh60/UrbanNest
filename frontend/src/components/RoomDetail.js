@@ -33,7 +33,7 @@ const RoomDetail = () => {
   return (
     <div className="max-w-4xl mx-auto p-4 pt-32">
       {/* Image Gallery */}
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(0,1fr))] gap-2 mb-5 border-gray-300">
+      <div className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fit,minmax(0,1fr))] gap-2 mb-5 border-gray-300">
         {roomDetail.images.map((image, index) => {
             const imgUrl = "http://localhost:3001/" + image;
             return (
@@ -50,8 +50,8 @@ const RoomDetail = () => {
 
 
       {/* Listing Details */}
-      <div className='flex gap-5 '>
-        <div className='w-7/12'>
+      <div className='sm:flex gap-5 '>
+        <div className='sm:w-7/12'>
         <h2 className="text-2xl font-semibold mb-2 capitalize p-1">{roomDetail.headline}</h2>
         <div className="bg-white shadow-md rounded-lg p-4 mb-5 border border-gray-300">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -155,7 +155,7 @@ const RoomDetail = () => {
 
         {/* Contact Section */}
         <div className=' mt-12 '>
-            <div className="bg-white sticky top-28  shadow-md rounded-lg p-4 mb-5 border border-gray-300 h-fit">
+            <div className="bg-white sm:sticky sm:top-28  shadow-md rounded-lg p-4 mb-5 border border-gray-300 h-fit">
                 <div className="flex items-center mb-4">
                 <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
                     {roomDetail.profile.profilePicture ?
