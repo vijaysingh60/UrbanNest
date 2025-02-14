@@ -24,7 +24,7 @@ const HomeFeature = () => {
     ];
 
     return (
-        <div className="py-10 px-10">
+        <div className="p-5 sm:p-10">
             <h2 className="text-4xl font-thin  mb-10">
                 UrbanNest brings places and people together
             </h2>
