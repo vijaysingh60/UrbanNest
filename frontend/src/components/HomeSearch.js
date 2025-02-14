@@ -79,8 +79,8 @@ function HomeSearch({ isHome }) {
 
   return (
     <div className="main" ref={mainRef}>
-      <div className={`flex ${isHome ? "mb-28 mt-20" : "mt-10"} items-center`}>
-        <div className={isHome ? "absolute w-5/12 " : "absolute w-1/3"}>
+      <div className={`flex ${isHome ? "mb-28 sm:mt-20 mt-16" : "mt-10"} items-center`}>
+        <div className={isHome ? "absolute sm:w-5/12 w-10/12" : "absolute sm:w-1/3 "}>
           <input
             onFocus={() => setTyping(true)}
             onKeyDown={handleKeyDown}
@@ -111,7 +111,7 @@ function HomeSearch({ isHome }) {
       </div>
       <div
         className={`options z-10 rounded-2xl p-4  bg-white shadow-xl ${
-          isHome ? "top-96 w-5/12 " : "mt-9 w-1/3 "
+          isHome ? "top-80 w-10/12 sm:top-96 sm:w-5/12 " : "sm:mt-9 mt-7 sm:w-1/3 "
         } absolute`}
         style={{ display: typing ? "block" : "none" }}
       >
