@@ -80,7 +80,7 @@ import url from './auth/backendUrl';
 
     return (
         <div className='pt-24'>
-        <form className="w-1/2 bg-gray-100 mx-auto p-4  mb-10" onSubmit={handleContinue}>
+        <form className="sm:w-1/2 bg-gray-100 mx-auto p-4  mb-10" onSubmit={handleContinue}>
         <h1 className="text-2xl font-bold mb-4">I'm offering a place</h1>
 
         {/* Monthly Rental Rate */}
@@ -96,7 +96,7 @@ import url from './auth/backendUrl';
                 required
             />
         </div>
-        <div className='flex items-center  my-2  gap-10'>
+        <div className='flex items-center  my-2  sm:gap-10 gap-5'>
             
             <input
                 type='text' 
@@ -141,7 +141,7 @@ import url from './auth/backendUrl';
         <div className="mb-4">
             <label className="block font-medium">Upload Images</label>
             <input type="file" multiple onChange={handleFileUpload} className="p-2 mt-2 border rounded w-full" name='images' />
-            <div className="grid grid-cols-4 gap-2 mt-2">
+            <div className="grid sm:grid-cols-4 grid-cols-2 gap-2 mt-2">
             {images.map((image, index) => (
                 <div key={index} className="h-24 w-full bg-gray-200 rounded flex items-center justify-center">
                 <img src={URL.createObjectURL(image)} alt="preview" className="h-full w-full object-cover rounded" />
