@@ -21,7 +21,7 @@ const RoomDetail = () => {
     const location = useLocation();
     const roomDetail = location.state?.props;
     //const { roomDetail } = useContext(SearchContext);
-    const imgurl = 'http://localhost:3001/' + roomDetail.profile.profilePicture;
+    const imgurl =  roomDetail.profile.profilePicture;
     // Setting up the default icon for Leaflet markers
     L.Icon.Default.mergeOptions({
         iconRetinaUrl: markerIcon2x,
