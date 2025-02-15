@@ -6,7 +6,7 @@ import url from './auth/backendUrl';
 
 const Room = ({props}) => {
 
-    const imgurl = url+'/' + props.images[0];
+    const imgurl =  props.images[0];
     const profileImgUrl = url+'/' + props.profile.profilePicture;
 
     const navigate = useNavigate();
