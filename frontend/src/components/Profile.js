@@ -16,7 +16,7 @@ function Profile() {
     
     
     const {userInfo,setUserInfo,loading,setLoading} = useContext(UserData)
-    const imgurl = userInfo && url+'/' + userInfo.profilePicture
+    const imgurl = userInfo && userInfo.profilePicture
     
 
    
