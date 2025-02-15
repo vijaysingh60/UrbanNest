@@ -30,7 +30,7 @@ import url from "./auth/backendUrl";
             }
             idk();
         },[])
-        const imgurl = userInfo && 'http://localhost:3001/' + userInfo.profilePicture;
+        const imgurl = userInfo &&  userInfo.profilePicture;
 return (
     <div className="sm:p-6 p-3 bg-gray-100 min-h-screen pt-24 flex flex-col justify-center items-center">
         {/* User Profile Section */}
