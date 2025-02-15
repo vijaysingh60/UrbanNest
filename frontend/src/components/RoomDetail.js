@@ -35,7 +35,7 @@ const RoomDetail = () => {
       {/* Image Gallery */}
       <div className="grid grid-cols-2 sm:grid-cols-[repeat(auto-fit,minmax(0,1fr))] gap-2 mb-5 border-gray-300">
         {roomDetail.images.map((image, index) => {
-            const imgUrl = "http://localhost:3001/" + image;
+            const imgUrl =  image;
             return (
             <div className="relative overflow-hidden h-96" key={index}>
                 <img
