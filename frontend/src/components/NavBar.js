@@ -11,7 +11,7 @@ function NavBar() {
     useEffect(()=>{
         checkAuthStatus();
     })
-    const imgurl = userInfo && url+'/' + userInfo.profilePicture;
+    const imgurl = userInfo &&  userInfo.profilePicture;
   return (
     <div className='w-full h-20 fixed z-50'>
         <nav className="bg-white shadow-lg p-4 h-20 flex items-center z-50">
